@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="35dp"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:maxLength="38"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+<ImageView
+    android:id="@+id/up"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/upmali2"
+    android:layout_below="@+id/name"
+    android:layout_alignEnd="@+id/progress" />
+    <TextView
+        android:id="@+id/upSpeed"
+        android:layout_width="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/down"
+        android:layout_toEndOf="@+id/down"
+        android:layout_below="@+id/name" />
+    <ImageView
+        android:id="@+id/down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/downmali"
+        android:layout_below="@+id/name"
+        android:layout_alignEnd="@+id/downSpeed" />
+    <TextView
+        android:id="@+id/downSpeed"
+        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name" />
+    <TextView
+        android:id="@+id/progress"
+        android:layout_below="@id/name"
+        android:layout_width="100dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/zbrisi"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="false"
+        android:longClickable="false" />
+    <ImageView
+        android:id="@+id/stanje"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/zbrisi"
+         />
+
+</RelativeLayout>
